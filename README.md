@@ -1,3 +1,0 @@
-# AggieDefenders
-
-### Cyber Security Club
