@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Redirect } from 'react-router-dom';
 import { Spinner } from '@blueprintjs/core';
 // import Landing from './components/Landing';
 import Landing from './pages/Landing';
@@ -185,7 +185,7 @@ class App extends Component {
 
     return (
       <div style={{maxWidth: "1160px", margin: "0 auto"}}>
-        <BrowserRouter>
+        <HashRouter>
           <div>
             <Header addSong={this.addMessage}  authenticated={this.state.authenticated} />
             <div className="main-content" style={{padding: "1em"}}>
@@ -255,7 +255,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-        </BrowserRouter>
+        </HashRouter>
         <Footer />
       </div>
     );
