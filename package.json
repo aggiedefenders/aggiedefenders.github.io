@@ -17,6 +17,8 @@
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "react-scripts": "^1.0.7",
     "react-test-renderer": "^15.6.1"
   },
