@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+const footerStyle ={
+  fontSize: '14px', 
+  justifyContent: 'center',
+  textAlign: 'center'
+}
+
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -21,9 +27,16 @@ class Footer extends Component {
               }}>
 
       <div className="row">
-        <div className="col-md-4"><p>Resources</p></div>
-        <div className="col-md-4"><p>Contact</p></div>
-        <div className="col-md-4"><p>Downloads</p></div>
+        <div className="col-md-4">
+          <a className="pt-interactive" href="#/resources" style={footerStyle}>Resources</a>
+        </div>
+        <div className="col-md-4">
+          <a className="pt-interactive" href="#/contact" style={footerStyle}>Contact</a>
+        </div>
+        <div className="col-md-4">
+           <a className="pt-interactive" href="#/files" style={footerStyle}>Downloads</a>
+       </div>
+
       </div>
 
     </div>

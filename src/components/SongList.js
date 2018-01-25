@@ -17,8 +17,8 @@ const songCardStyles = {
 
 class SongList extends Component {
   render() {
-    const { songs } = this.props
-    const songIds = Object.keys(songs)
+    const { news } = this.props
+    const songIds = Object.keys(news)
 
     return (
       <div>
@@ -26,10 +26,12 @@ class SongList extends Component {
 
         <div style={songListStyles}>
           {songIds.map((id) => {
-            const song = songs[id]
+            const song = news[id]
             return (
               <div key={id} style={songCardStyles} className="pt-card pt-elevation-0 pt-interactive">
-                <h5><Link to={`/songs/${id}`}>{song.title}</Link></h5>
+
+                
+                <h5><Link to={`/news`}>{song.title}</Link></h5>
               </div>
             )
           })}

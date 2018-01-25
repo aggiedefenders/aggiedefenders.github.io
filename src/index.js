@@ -11,5 +11,7 @@ import '@blueprintjs/core/dist/blueprint.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
+require('react-big-calendar/lib/css/react-big-calendar.css');
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

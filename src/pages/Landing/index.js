@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Head from './Head';
 import Section1 from './Section1';
-import Section2 from './Section2';
+import Section2 from './Section2/Section2';
 const messageStyles ={
   color: '#2980b9'
 }
@@ -20,7 +20,6 @@ const example1Styles = {
   overflowY: 'auto',
   marginBottom: '20px',
   padding: '5px',
-  
   flexDirection: "column",
   flexWrap: "nowrap",
   
@@ -28,23 +27,17 @@ const example1Styles = {
 }
 
 const example2Styles = {
-
-
 }
 
 class Landing extends Component {
     constructor(props) {
     super(props)
-  
-    this.state = {
-      
+    this.state = {   
     }
   }
 
 
   render() {
-   
-
     return (
         <div className="">
             <Head />
