@@ -7,7 +7,7 @@ import firebase from 'firebase';
 
 var database = firebase.database();
 
-class Admins extends Component {
+class Files extends Component {
     constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +15,7 @@ class Admins extends Component {
       products: []
     };
 
-   this.filesRef = database.ref('admins');
+   this.filesRef = database.ref('files');
   }
   
   componentDidMount() {
@@ -30,7 +30,7 @@ class Admins extends Component {
     for (let i = 0; i < keys.length; i++) {
       const k = keys[i];
       newProducts.push({
-        name: userdata[k].name, downloadURL: userdata[k].email, phone: userdata[k].phone
+        name: userdata[k].nama, downloadURL: userdata[k].downloadURL, fileName: userdata[k].fileName
       });
     }
     this.setState({products: newProducts});
@@ -48,22 +48,22 @@ class Admins extends Component {
 render(){
 
   return (
-  <div className ="pt-card">
+  <div>
       <div className="col-lg-12">
-      <h3> Admins </h3>
+      <h3>Edit Files </h3>
    </div>
     <BootstrapTable  
         ref='table'
         data={ this.state.products }
         pagination={ true }
         search={ true }>
-      <TableHeaderColumn dataField='name' isKey={true} dataSort={true}>Name</TableHeaderColumn>
-        <TableHeaderColumn dataField='downloadURL' dataSort={true}>Email</TableHeaderColumn>
-        <TableHeaderColumn dataField='phone'>Phone Number</TableHeaderColumn>
+      <TableHeaderColumn dataField='fileName' isKey={true} dataSort={true}>Name</TableHeaderColumn>
+        <TableHeaderColumn dataField='downloadURL' dataSort={true}>URL</TableHeaderColumn>
+        <TableHeaderColumn dataField='fileName'>File Name</TableHeaderColumn>
       </BootstrapTable>
     </div>
   );
  }
 }
 
-export default Admins;
+export default Files;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import {IntlProvider, FormattedMessage,FormattedRelative} from 'react-intl'
 
 const songListStyles = {
   display: "flex",
@@ -18,25 +17,19 @@ const songCardStyles = {
 
 class News extends Component {
   render() {
-    const {news} = this.props
-   
-    const fileIds = Object.keys(news)
+    const { songs } = this.props
+    const songIds = Object.keys(songs)
 
     return (
       <div>
         <h1 style={{marginBottom: "0.5em"}}>News</h1>
 
-        <div>
-          {fileIds.map((id) => {
-            const article = news[id]
+        <div style={songListStyles}>
+          {songIds.map((id) => {
+            const song = songs[id]
             return (
-              <div key={id}  className="pt-card pt-elevation-0 pt-interactive">
-                 <h5><Link to={`/news/${id}`}>{article.title}</Link></h5>
-                <ul style={{fontSize:'10px'}}> 
-                  <IntlProvider locale="en">
-                        <FormattedRelative value={article.id} />
-                  </IntlProvider>
-                </ul>
+              <div key={id} style={songCardStyles} className="pt-card pt-elevation-0 pt-interactive">
+                <h5><Link to={`/news/${id}`}>{song.title}</Link></h5>
               </div>
             )
           })}
