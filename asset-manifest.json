@@ -1,10 +1,11 @@
 {
   "main.css": "static/css/main.8cb9eba6.css",
   "main.css.map": "static/css/main.8cb9eba6.css.map",
-  "main.js": "static/js/main.95e906be.js",
-  "main.js.map": "static/js/main.95e906be.js.map",
+  "main.js": "static/js/main.fbc3aaad.js",
+  "main.js.map": "static/js/main.fbc3aaad.js.map",
   "static/media/avatar.png": "static/media/avatar.fc047347.png",
   "static/media/bg_b.jpg": "static/media/bg_b.007090aa.jpg",
+  "static/media/calendar.png": "static/media/calendar.00e8fa91.png",
   "static/media/city.gif": "static/media/city.954d7999.gif",
   "static/media/icons-16.eot": "static/media/icons-16.3e10f4b0.eot",
   "static/media/icons-16.ttf": "static/media/icons-16.38753f56.ttf",
@@ -17,6 +18,7 @@
   "static/media/network.gif": "static/media/network.5efb9365.gif",
   "static/media/security_guard.png": "static/media/security_guard.859c868d.png",
   "static/media/slack.png": "static/media/slack.1fb6129a.png",
+  "static/media/slack2.png": "static/media/slack2.6220ea2b.png",
   "static/media/tech2.png": "static/media/tech2.75107abe.png",
   "static/media/wave.png": "static/media/wave.a0095b8f.png"
 }
