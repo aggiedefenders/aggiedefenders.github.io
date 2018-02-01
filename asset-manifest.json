@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.8cb9eba6.css",
   "main.css.map": "static/css/main.8cb9eba6.css.map",
-  "main.js": "static/js/main.fbc3aaad.js",
-  "main.js.map": "static/js/main.fbc3aaad.js.map",
+  "main.js": "static/js/main.d32b57d5.js",
+  "main.js.map": "static/js/main.d32b57d5.js.map",
   "static/media/avatar.png": "static/media/avatar.fc047347.png",
   "static/media/bg_b.jpg": "static/media/bg_b.007090aa.jpg",
   "static/media/calendar.png": "static/media/calendar.00e8fa91.png",
@@ -16,6 +16,7 @@
   "static/media/jaekwon.jpg": "static/media/jaekwon.728135bc.jpg",
   "static/media/lonnie.jpg": "static/media/lonnie.fb310cae.jpg",
   "static/media/network.gif": "static/media/network.5efb9365.gif",
+  "static/media/resources.png": "static/media/resources.469e3a51.png",
   "static/media/security_guard.png": "static/media/security_guard.859c868d.png",
   "static/media/slack.png": "static/media/slack.1fb6129a.png",
   "static/media/slack2.png": "static/media/slack2.6220ea2b.png",
